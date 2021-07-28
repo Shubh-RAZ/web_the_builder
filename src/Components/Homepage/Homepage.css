@@ -1,0 +1,257 @@
+.homepage {
+  height: 100vh;
+  overflow: scroll;
+  width: 100vw;
+  /* border: 2px solid red; */
+  position: relative;
+  overflow-x: hidden;
+}
+
+.inside-circle-2 {
+  border: 2px solid rgba(89, 24, 223, 0.9);
+  animation: animate-circle 2s;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  bottom: -17px;
+  left: -10px;
+  transition: all 2s ease-in-out;
+}
+
+@keyframes animate-circle {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.side-line {
+  height: 80vh;
+  width: 2px;
+  margin-left: 15vw;
+  position: absolute;
+  bottom: 0;
+  position: fixed;
+}
+
+.line-1 {
+  height: 50%;
+  width: 100%;
+  background: rgba(89, 24, 223, 0.2);
+  border-radius: 5px;
+  position: relative;
+}
+
+.line-2 {
+  height: 50%;
+  width: 100%;
+  background: rgba(89, 24, 223, 0.4);
+}
+
+.circle {
+  background: rgba(89, 24, 223, 0.9);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  right: 3px;
+  display: flex;
+}
+
+.corals {
+  width: 400px;
+  height: 350px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.slide-content {
+  height: 100vh;
+  /* border: 2px solid red; */
+  color: white;
+}
+
+.slide-content-2 {
+  border: 2px solid green;
+  height: 100vh;
+}
+
+.slide-content-3 {
+  border: 2px solid yellow;
+  height: 100vh;
+}
+.fish-orange {
+  width: 200px;
+  height: 137px;
+  position: absolute;
+  bottom: 200px;
+  right: 400px;
+}
+
+.fish-yellow {
+  width: 137px;
+  height: 97px;
+  position: absolute;
+  bottom: 400px;
+  right: 150px;
+}
+
+.Logo-1 {
+  font-family: Arvo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 79px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-align: left;
+}
+.Logo-2 {
+  font-family: Arvo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 79px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  text-align: left;
+}
+
+.content-front {
+  margin-left: 20vw;
+  /* border: 2px solid red; */
+  height: 80vh;
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  align-items: center;
+  text-align: left;
+}
+
+.desc-2 {
+  font-family: Titillium Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 55px;
+  letter-spacing: 0.1em;
+  color: #5918df;
+  text-align: left;
+}
+
+.desc-1 {
+  font-family: Titillium Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 55px;
+  letter-spacing: 0.1em;
+  color: #5918df;
+}
+
+.Navbar {
+  position: absolute;
+  top: 0;
+}
+
+@media (max-width: 1300px) {
+  .Logo-1 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .Logo-2 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .desc-1 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 15px;
+  }
+
+  .desc-2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .fish-orange {
+    width: 100px;
+    height: 70px;
+    right: 350px;
+  }
+
+  .fish-yellow {
+    width: 100px;
+    height: 80px;
+    bottom: 300px;
+  }
+
+  .corals {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .fish-orange {
+    width: 100px;
+    height: 70px;
+    right: 250px;
+  }
+
+  .fish-yellow {
+    width: 100px;
+    height: 80px;
+    bottom: 350px;
+  }
+
+  .corals {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 870px) {
+  .fish-orange {
+    display: none;
+  }
+
+  .fish-yellow {
+    display: none;
+  }
+
+  .corals {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Logo-1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .Logo-2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .desc-1 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 15px;
+  }
+
+  .desc-2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
