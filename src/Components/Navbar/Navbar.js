@@ -13,6 +13,7 @@ const Navbar = () => {
                 <div className="navbar-content">
                     <div className="navbar-list">Home()</div>
                     <div className="navbar-list">About us()</div>
+                    <div className="navbar-list">Contact us()</div>
                     <div className="navbar-list">Projects()</div>
                 </div>
             </div>
@@ -33,7 +34,9 @@ const Navbar = () => {
                        { showPhoneMenu ? <div className="phone-menu-content">
                             <div className="hamburger-phone-list">Home()</div>
                             <div className="hamburger-phone-list">Abot us()</div>
+                            <div className="hamburger-phone-list">Contact us()</div>  
                             <div className="hamburger-phone-list">Projects()</div>    
+                           
                         </div> : null }
 
                       { showPhoneMenu ?   <div className="jelly">

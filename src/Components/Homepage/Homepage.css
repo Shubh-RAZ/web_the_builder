@@ -77,12 +77,11 @@
 }
 
 .slide-content-2 {
-  border: 2px solid green;
   height: 100vh;
 }
 
 .slide-content-3 {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   height: 100vh;
 }
 .fish-orange {
@@ -253,5 +252,306 @@
   .desc-2 {
     font-size: 20px;
     line-height: 25px;
+  }
+}
+
+/* slide2 */
+
+.slide-content-2 {
+  position: relative;
+}
+
+.sea-lion {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 0px;
+  right: 50px;
+}
+
+.allien {
+  width: 300px;
+  height: 350px;
+  position: absolute;
+  bottom: 10vh;
+}
+
+.content-what-we-do {
+  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  /* border: 2px solid red; */
+  margin-left: 20vw;
+  display: grid;
+  align-items: center;
+  text-align: left;
+}
+
+.topic-heading {
+  font-family: Arvo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 79px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.topic-desc {
+  font-family: Titillium Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 45px;
+  width: 70%;
+  /* letter-spacing: 0.1em; */
+  color: #5918df;
+}
+
+@media (max-width: 1300px) {
+  .topic-desc {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .allien {
+    display: none;
+  }
+
+  .sea-lion {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 700px) {
+  .topic-heading {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .topic-desc {
+    width: 90%;
+  }
+
+  .sea-lion {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 420px) {
+  .topic-heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .topic-desc {
+    font-size: 16px;
+  }
+}
+
+/* slide3 */
+
+.slide-content-3 {
+  position: relative;
+}
+
+.star-fish {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 850px) {
+  .star-fish {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* slide4 */
+
+.slide-content-4 {
+  height: 100vh;
+  margin-left: 20vw;
+  text-align: left;
+  position: relative;
+  /* border: 2px solid red; */
+  display: grid;
+  align-items: center;
+}
+
+.package-list {
+  display: flex;
+  align-items: center;
+  margin-right: 35px;
+}
+
+.package-option {
+  display: flex;
+  margin-top: 10px;
+}
+
+.package-circle {
+  border: 2px solid rgba(89, 24, 223, 0.9);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.active-package {
+  /* border: 2px solid rgba(89, 24, 223, 0.9); */
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 20px;
+  background: rgba(89, 24, 223, 0.9);
+}
+
+.package-name {
+  font-family: Arvo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 44px;
+  letter-spacing: 0.1em;
+  color: #5918df;
+}
+
+.package-desc {
+  font-family: Titillium Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  width: 80%;
+  color: #5918df;
+  margin-top: 20px;
+}
+
+.package-includes {
+  display: flex;
+  margin-top: 25px;
+}
+
+.include-list {
+  margin-right: 35px;
+  font-size: 25px;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .package-name {
+    font-size: 25px;
+  }
+
+  .package-desc {
+    font-size: 20px;
+    width: 90%;
+  }
+
+  .include-list {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .package-desc {
+    width: 80%;
+  }
+
+  .package-name {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 610px) {
+  .package-desc {
+    width: 70%;
+  }
+
+  .package-name {
+    font-size: 20px;
+  }
+
+  .package-desc {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 530px) {
+  .package-desc {
+    width: 70%;
+  }
+
+  .package-name {
+    font-size: 18px;
+  }
+
+  .package-desc {
+    font-size: 16px;
+    width: 60%;
+  }
+
+  .package-list {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .package-desc {
+    width: 70%;
+  }
+
+  .package-name {
+    font-size: 16px;
+  }
+
+  .package-desc {
+    font-size: 15px;
+    width: 60%;
+  }
+
+  .package-list {
+    margin-right: 15px;
+  }
+
+  .include-list {
+    font-size: 16px;
+  }
+  .package-circle {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 402px) {
+  .package-details {
+    width: 80%;
+  }
+
+  .package-name {
+    font-size: 14px;
+  }
+
+  .package-desc {
+    font-size: 14px;
+    width: 60%;
+  }
+
+  .package-list {
+    margin-right: 15px;
+  }
+
+  .package-circle {
+    margin-right: 10px;
   }
 }
