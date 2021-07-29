@@ -46,6 +46,10 @@
   position: relative;
 }
 
+.shark {
+  display: none;
+}
+
 .line-2 {
   height: 50%;
   width: 100%;
@@ -219,17 +223,34 @@
 
 @media (max-width: 870px) {
   .fish-orange {
-    display: none;
+    bottom: 50vh;
   }
 
   .fish-yellow {
-    display: none;
+    bottom: 60vh;
+    right: 50px;
   }
 
   .corals {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
   }
+}
+
+@media (max-width: 610px) {
+  .fish-orange {
+    bottom: 10vh;
+    left: 27vw;
+  }
+
+  /* 
+  .shark {
+    width: 300px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    bottom: 60vh;
+  } */
 }
 
 @media (max-width: 500px) {
@@ -252,6 +273,15 @@
   .desc-2 {
     font-size: 20px;
     line-height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fish-orange {
+    width: 100px;
+    height: 50px;
+    bottom: 100px;
+    left: 20vw;
   }
 }
 
@@ -318,7 +348,9 @@
 
 @media (max-width: 1130px) {
   .allien {
-    display: none;
+    top: 0;
+    width: 200px;
+    height: 250px;
   }
 
   .sea-lion {
@@ -366,6 +398,18 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  animation: star-rotate 5s linear infinite;
+  transition: all 5s;
+}
+
+@keyframes star-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 850px) {

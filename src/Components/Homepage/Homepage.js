@@ -8,6 +8,7 @@ import Allien from '../../Assets/alien';
 import Navbar from '../Navbar/Navbar';
 import './Homepage.css'
 import Starfish from '../../Assets/Starfish';
+import Shark from '../../Assets/Shark';
 const Homepage = () => {
 
     const [ scrollTop , setScrollTop ] = useState(0)
@@ -114,6 +115,7 @@ const Homepage = () => {
                 <div className="corals" ><Corals></Corals> </div>
                 <div className="fish-orange" style={transformOrange}><Fishorange></Fishorange></div>
                 <div className="fish-yellow" style={transformYellow}><Fishyellow></Fishyellow></div>
+                <div className="shark"><Shark></Shark></div>
                 <div className="content-front">
                     <div className="inside-cont">
                         <div className="Logo-1">Web</div>
