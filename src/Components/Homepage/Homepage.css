@@ -107,7 +107,7 @@
   font-size: 64px;
   line-height: 79px;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: #808080;
   text-align: left;
 }
 .Logo-2 {
@@ -117,7 +117,7 @@
   font-size: 64px;
   line-height: 79px;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: #808080;
   text-align: left;
 }
 
@@ -139,7 +139,7 @@
   font-size: 36px;
   line-height: 55px;
   letter-spacing: 0.1em;
-  color: #5918df;
+  color: #682ae9;
   text-align: left;
 }
 
@@ -150,7 +150,7 @@
   font-size: 36px;
   line-height: 55px;
   letter-spacing: 0.1em;
-  color: #5918df;
+  color: #682ae9;
 }
 
 .Navbar {
@@ -295,7 +295,7 @@
   line-height: 79px;
   /* identical to box height */
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: #808080;
 }
 
 .topic-desc {
@@ -306,7 +306,7 @@
   line-height: 45px;
   width: 70%;
   /* letter-spacing: 0.1em; */
-  color: #5918df;
+  color: #682ae9;
 }
 
 @media (max-width: 1300px) {
@@ -423,7 +423,7 @@
   font-size: 30px;
   line-height: 44px;
   letter-spacing: 0.1em;
-  color: #5918df;
+  color: #682ae9;
 }
 
 .package-desc {
@@ -434,7 +434,7 @@
   line-height: 35px;
   letter-spacing: 0.1em;
   width: 80%;
-  color: #5918df;
+  color: #682ae9;
   margin-top: 20px;
 }
 
@@ -446,7 +446,7 @@
 .include-list {
   margin-right: 35px;
   font-size: 25px;
-  color: white;
+  color: #808080;
 }
 
 @media (max-width: 1000px) {
