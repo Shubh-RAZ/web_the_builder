@@ -173,7 +173,7 @@ const Homepage = () => {
             </div>
 
             <div className="Navbar">
-                <Navbar></Navbar>
+                <Navbar active="home"></Navbar>
             </div>
 
             <div className="slide-content">

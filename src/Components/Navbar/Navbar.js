@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../Assets/Logo'
 import './Navbar.css'
-const Navbar = () => {
+const Navbar = (props) => {
 
     const [ showPhoneMenu , setPhoneMenu ] = useState(false)
     return ( 
@@ -12,10 +12,10 @@ const Navbar = () => {
                     <Logo></Logo>
                 </div>
                 <div className="navbar-content">
-                <Link to="/" style={{textDecoration:'none'}}> <div className="navbar-list">Home()</div> </Link>
-                    <Link to="/bout" style={{textDecoration:'none'}}>  <div className="navbar-list">About us()</div> </Link>
-                  <Link to="/reach" style={{textDecoration:'none'}}>  <div className="navbar-list">Contact us()</div> </Link>
-                  <Link to="/projects" style={{textDecoration:'none'}}> <div className="navbar-list">Projects()</div> </Link>
+                <Link to="/" style={{textDecoration:'none'}}> <div className={ props.active === "home" ? "active-navbar-list" : "navbar-list" }>Home()</div> </Link>
+                    <Link to="/bout" style={{textDecoration:'none'}}>  <div className={ props.active === "about" ? "active-navbar-list" : "navbar-list" }>About us()</div> </Link>
+                  <Link to="/reach" style={{textDecoration:'none'}}>  <div className={ props.active === "contact" ? "active-navbar-list" : "navbar-list" }>Contact us()</div> </Link>
+                  <Link to="/projects" style={{textDecoration:'none'}}> <div className={ props.active === "projects" ? "active-navbar-list" : "navbar-list" }>Projects()</div> </Link>
                 </div>
             </div>
 

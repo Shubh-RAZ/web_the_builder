@@ -6,12 +6,18 @@ import { useEffect , useState} from 'react';
 const ContactUs = (props) => {
 
     const [ transformOpacityFrontTitle , setOpacityFrontTitle ] = useState()
+    const [ transformOpacityFrontDesc , setOpacityFrontDesc ] = useState()
 
 
     useEffect( () => {
         setOpacityFrontTitle({
             animation:'fade 5s linear',
             transition:'all 5s',
+            opacity:'1'
+        })
+        setOpacityFrontDesc({
+            animation:'fade 10s linear',
+            transition:'all 10s',
             opacity:'1'
         })
 
@@ -22,7 +28,7 @@ const ContactUs = (props) => {
     return ( 
         <div className="contact">
                  <div className="navbar-contact">
-                <Navbar></Navbar>
+                <Navbar active="contact"></Navbar>
             </div>
 
             <div className="form-box">
@@ -32,7 +38,7 @@ const ContactUs = (props) => {
                 </div>
             </div>
 
-            <div className="svg-box" >
+            <div className="svg-box" style={transformOpacityFrontDesc}>
                 <div className="inside-svg">
                     <Octopus></Octopus>
                 </div>

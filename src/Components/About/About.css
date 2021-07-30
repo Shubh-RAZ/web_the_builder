@@ -1,0 +1,90 @@
+.about {
+  position: relative;
+}
+
+.about-content {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  padding-left: 20vw;
+  text-align: left;
+  overflow: hidden;
+}
+
+.topic-heading-about {
+  font-family: Arvo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 79px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  opacity: 0;
+}
+
+.topic-desc-about {
+  font-family: Titillium Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 3px;
+  color: #5918df;
+  width: 80%;
+  opacity: 0;
+}
+
+.jelly-about {
+  width: 250px;
+  height: 400px;
+  position: absolute;
+  bottom: -400px;
+  right: 2vw;
+  animation: jelly 5s linear forwards;
+}
+
+@keyframes jelly {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-90%);
+  }
+}
+
+@media (max-width: 1200px) {
+  .topic-desc-about {
+    font-size: 25px;
+  }
+
+  .jelly-about {
+    right: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .jelly-about {
+    height: 300px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .topic-desc-about {
+    font-size: 20px;
+    line-height: 35px;
+    width: 90%;
+  }
+}
+@media (max-width: 535px) {
+  .topic-heading-about {
+    font-size: 50px;
+  }
+  .topic-desc-about {
+    font-size: 16px;
+    width: 90%;
+    line-height: 30px;
+  }
+}
