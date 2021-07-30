@@ -1,0 +1,84 @@
+.form {
+  text-align: left;
+  width: 100%;
+  margin: auto;
+  /* border: 2px solid red; */
+}
+.label {
+  font-family: Titillium Web;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: #5918df;
+  opacity: 0;
+}
+
+.input-line {
+  border: 3px solid rgba(196, 196, 196, 0.1);
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  outline: none;
+  background: none;
+  width: 70%;
+}
+
+.input-line input {
+  /* height: 1px; */
+  outline: none;
+  background: none;
+  border: none;
+  color: white;
+  /* transform: translateY(-5px); */
+  transition: "all 10s";
+}
+
+.box-list {
+  margin-bottom: 35px;
+}
+
+.input-msg {
+  opacity: 0;
+}
+
+.input-msg textarea {
+  margin-top: 25px;
+  width: 70%;
+  background: rgba(196, 196, 196, 0.1);
+  border: none;
+  outline: none;
+  color: white;
+  min-height: 20vh;
+}
+
+.submit-form {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #808080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background: #5918df;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .input-line {
+    width: 80%;
+  }
+
+  .input-msg textarea {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .label {
+    font-size: 20px;
+  }
+}

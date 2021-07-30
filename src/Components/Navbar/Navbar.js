@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../../Assets/Logo'
 import './Navbar.css'
 const Navbar = () => {
@@ -11,10 +12,10 @@ const Navbar = () => {
                     <Logo></Logo>
                 </div>
                 <div className="navbar-content">
-                    <div className="navbar-list">Home()</div>
-                    <div className="navbar-list">About us()</div>
-                    <div className="navbar-list">Contact us()</div>
-                    <div className="navbar-list">Projects()</div>
+                <Link to="/" style={{textDecoration:'none'}}> <div className="navbar-list">Home()</div> </Link>
+                    <Link to="/bout" style={{textDecoration:'none'}}>  <div className="navbar-list">About us()</div> </Link>
+                  <Link to="/reach" style={{textDecoration:'none'}}>  <div className="navbar-list">Contact us()</div> </Link>
+                  <Link to="/projects" style={{textDecoration:'none'}}> <div className="navbar-list">Projects()</div> </Link>
                 </div>
             </div>
 
@@ -32,10 +33,10 @@ const Navbar = () => {
 
                     <div className={showPhoneMenu ? "phone-menu" : "hidden-menu" }>
                        { showPhoneMenu ? <div className="phone-menu-content">
-                            <div className="hamburger-phone-list">Home()</div>
-                            <div className="hamburger-phone-list">Abot us()</div>
-                            <div className="hamburger-phone-list">Contact us()</div>  
-                            <div className="hamburger-phone-list">Projects()</div>    
+                       <Link to="/" style={{textDecoration:'none'}}>     <div className="hamburger-phone-list">Home()</div> </Link>
+                       <Link to="/bout" style={{textDecoration:'none'}}>   <div className="hamburger-phone-list">Abot us()</div> </Link>
+                       <Link to="/reach" style={{textDecoration:'none'}}>    <div className="hamburger-phone-list">Contact us()</div>  </Link>
+                       <Link to="/projects" style={{textDecoration:'none'}}>   <div className="hamburger-phone-list">Projects()</div>    </Link>
                            
                         </div> : null }
 
