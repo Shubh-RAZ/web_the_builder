@@ -17,6 +17,12 @@ const Projects = () => {
         setDrag(true)
     }
 
+    const touchStart = (e) => {
+        console.log(e.currentTarget.getBoundingClientRect().left)
+        setDiffX(e.currentTarget.getBoundingClientRect().left)
+        setDrag(true)
+    }
+
 
 
     const dragging = (e) =>{
@@ -24,7 +30,7 @@ const Projects = () => {
         if(drag){
             var left  = e.screenX - diffX 
             setLeft(left)
-            if(prevleft > left){
+            if(prevleft > left && left >= 0){
                 setStyle({
                     left:left
                 })
@@ -40,7 +46,33 @@ const Projects = () => {
       
     }
 
+    const touchMove = (e) => {
+        if(drag){
+            var touchLeft = e.touches[0].clientX - diffX
+            setLeft(touchLeft)
+            if( prevleft > touchLeft && touchLeft >=0){
+                setStyle({
+                    left:touchLeft
+                })
+                document.getElementById('scroll').scrollLeft -= touchLeft/90
+            }
+            else{
+                document.getElementById('scroll').scrollLeft += touchLeft/90;
+                if(touchLeft >=0){
+                    setStyle({
+                        left:touchLeft
+                    })
+                }
+           
+            }
+        }
+    }
+
     const dragEnd = () => {
+        setDrag(false)
+    }
+
+    const touchEnd = () => {
         setDrag(false)
     }
     return ( 
@@ -49,7 +81,7 @@ const Projects = () => {
                 <Navbar active="projects"></Navbar>
             </div>
 
-            <div className="horizontal-line" onMouseDown={dragStart} onMouseMove={dragging} onMouseUp={dragEnd} >
+            <div className="horizontal-line" onMouseDown={dragStart} onMouseMove={dragging} onMouseUp={dragEnd} onTouchStart={touchStart} onTouchMove={touchMove} onTouchEnd={touchEnd} >
                 <div className="horizontal-circle" style={style}></div>
             </div>
 
