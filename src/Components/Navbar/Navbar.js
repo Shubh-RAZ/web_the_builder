@@ -43,7 +43,7 @@ const Navbar = (props) => {
                       { showPhoneMenu ?   <div className="jelly">
                             <img src="./jelly.gif"></img>
                         </div> : null }
-                        </div> :null
+                        </div> 
                 
         </div>
      );
